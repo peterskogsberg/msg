@@ -46,8 +46,8 @@ public class MessageUtils {
 		@SuppressWarnings("unused")
 		JSONBuilder jb = new JSONBuilder(sw)
 		.object()
-		.key("status")
-		.value(s)
+			.key("status")
+			.value(s)
 		.endObject();
 		
 		return sw.toString();
@@ -69,7 +69,6 @@ public class MessageUtils {
 		}
 
 		ret += " ORDER BY timestamp ASC";
-		System.out.println("query = " + ret);
 		return ret;
 	}	
 }
